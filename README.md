@@ -1,6 +1,6 @@
 # PrintPro Backend API
 
-Backend complet pour l'application PrintPro - Gestion de services d'impression professionnelle.
+Backend complet pour l'application 3MPrinting - Gestion de services d'impression professionnelle.
 
 ## 🚀 Technologies
 
@@ -237,8 +237,8 @@ npm test
 ## 📞 Support
 
 Pour toute question ou problème :
-- 📧 Email : support@printpro.fr
-- 📱 Téléphone : 01 23 45 67 89
+- 📧 Email : support@3mprinting.com
+- 📱 Téléphone : +261 33 00 000 00
 
 ---
 
