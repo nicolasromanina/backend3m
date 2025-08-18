@@ -242,4 +242,4 @@ Pour toute question ou problème :
 
 ---
 
-**PrintPro Backend** - Solution complète pour la gestion de services d'impression professionnelle.
+**3Mprinting Backend** - Solution complète pour la gestion de services d'impression professionnelle.
