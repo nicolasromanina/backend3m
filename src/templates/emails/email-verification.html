@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vérification de votre email - PrintPro</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #f8fafc; 
+            line-height: 1.5;
+        }
+        .container { 
+            max-width: 600px; 
+            margin: 0 auto; 
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .header { 
+            background: linear-gradient(135deg, #10B981, #047857); 
+            color: white; 
+            padding: 40px 20px; 
+            text-align: center; 
+        }
+        .logo { 
+            font-size: 28px; 
+            font-weight: bold; 
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+        .logo img {
+            height: 40px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        .content { 
+            padding: 40px 30px; 
+            text-align: center; 
+        }
+        .verification-text { 
+            font-size: 22px; 
+            color: #111827; 
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+        .description { 
+            color: #4b5563; 
+            line-height: 1.6; 
+            margin-bottom: 30px;
+            text-align: left;
+        }
+        .button { 
+            display: inline-block; 
+            background: #10B981; 
+            color: white; 
+            padding: 14px 28px; 
+            text-decoration: none; 
+            border-radius: 6px; 
+            font-weight: 600; 
+            margin: 25px 0; 
+            transition: all 0.2s ease;
+            box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+        }
+        .button:hover {
+            background: #059669;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 6px -1px rgba(16, 185, 129, 0.3);
+        }
+        .security-note { 
+            background: #fffbeb; 
+            border-left: 4px solid #f59e0b; 
+            padding: 16px; 
+            border-radius: 4px; 
+            margin: 30px 0; 
+            color: #92400e;
+            text-align: left;
+            font-size: 15px;
+        }
+        .footer { 
+            background: #f3f4f6; 
+            padding: 25px 20px; 
+            text-align: center; 
+            color: #6b7280;
+            font-size: 14px;
+        }
+        .link-url {
+            display: inline-block;
+            background: #f3f4f6;
+            padding: 12px;
+            border-radius: 4px;
+            word-break: break-all;
+            color: #4b5563;
+            font-size: 13px;
+            margin: 15px 0;
+            text-align: left;
+            border: 1px solid #e5e7eb;
+        }
+        .divider {
+            height: 1px;
+            background-color: #e5e7eb;
+            margin: 30px 0;
+        }
+        .footer-links {
+            margin-top: 15px;
+        }
+        .footer-links a {
+            color: #6b7280;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer-links a:hover {
+            color: #10B981;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="https://via.placeholder.com/40x40/10B981/FFFFFF?text=PP" alt="PrintPro Logo">
+                PrintPro
+            </div>
+            <p>Confirmation de votre adresse email</p>
+        </div>
+        
+        <div class="content">
+            <h1 class="verification-text">Merci de vous être inscrit sur PrintPro !</h1>
+            
+            <p class="description">
+                Bonjour <strong>{{name}}</strong>,<br><br>
+                Nous sommes ravis de vous accueillir sur PrintPro. Pour finaliser la création de votre compte et accéder à tous nos services, veuillez confirmer votre adresse email en cliquant sur le bouton ci-dessous.
+            </p>
+            
+            <a href="{{verificationUrl}}" class="button">Confirmer mon email</a>
+            
+            <div class="security-note">
+                <strong>Pour votre sécurité :</strong> Ce lien de vérification est valable pendant 24 heures. Ne partagez jamais ce lien avec quelqu'un d'autre. Si vous n'êtes pas à l'origine de cette demande, veuillez ignorer cet email.
+            </div>
+            
+            <div class="divider"></div>
+            
+            <p class="description">
+                Si vous ne parvenez pas à cliquer sur le bouton, copiez et collez l'URL suivante dans votre navigateur :
+            </p>
+            
+            <div class="link-url">{{verificationUrl}}</div>
+            
+            <p class="description">
+                Besoin d'aide ? Contactez notre équipe support à <a href="mailto:support@printpro.fr" style="color: #10B981;">support@printpro.fr</a> ou consultez notre <a href="https://www.printpro.fr/aide" style="color: #10B981;">centre d'aide</a>.
+            </p>
+        </div>
+        
+        <div class="footer">
+            <p><strong>PrintPro</strong> - Votre partenaire d'impression professionnelle</p>
+            
+            <div class="footer-links">
+                <a href="https://www.printpro.fr">Accueil</a>
+                <a href="https://www.printpro.fr/conditions">Conditions</a>
+                <a href="https://www.printpro.fr/confidentialite">Confidentialité</a>
+            </div>
+            
+            <p>📧 support@printpro.fr | 📞 01 23 45 67 89<br>
+            123 Rue de l'Impression, 75000 Paris, France</p>
+            
+            <p>© 2024 PrintPro. Tous droits réservés.</p>
+            
+            <p style="font-size: 12px; margin-top: 15px;">
+                Cet email vous a été envoyé dans le cadre de la création de votre compte PrintPro.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

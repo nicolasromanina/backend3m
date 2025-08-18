@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenue chez PrintPro</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f8fafc; }
+        .container { max-width: 600px; margin: 0 auto; background-color: #ffffff; }
+        .header { background: linear-gradient(135deg, #3B82F6, #1E40AF); color: white; padding: 40px 20px; text-align: center; }
+        .logo { font-size: 28px; font-weight: bold; margin-bottom: 10px; }
+        .content { padding: 40px 20px; }
+        .welcome-text { font-size: 24px; color: #1f2937; margin-bottom: 20px; }
+        .description { color: #6b7280; line-height: 1.6; margin-bottom: 30px; }
+        .button { display: inline-block; background: #3B82F6; color: white; padding: 15px 30px; text-decoration: none; border-radius: 8px; font-weight: 600; margin: 20px 0; }
+        .features { background: #f9fafb; padding: 20px; border-radius: 8px; margin: 30px 0; }
+        .feature { margin-bottom: 15px; }
+        .feature-icon { color: #10b981; margin-right: 10px; }
+        .footer { background: #f3f4f6; padding: 30px 20px; text-align: center; color: #6b7280; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">PrintPro</div>
+            <p>Votre partenaire impression professionnel</p>
+        </div>
+        
+        <div class="content">
+            <h1 class="welcome-text">Bienvenue {{name}} ! 🎉</h1>
+            
+            <p class="description">
+                Nous sommes ravis de vous accueillir dans la famille PrintPro ! Votre compte a été créé avec succès 
+                et vous pouvez maintenant profiter de tous nos services d'impression professionnelle.
+            </p>
+            
+            <div class="features">
+                <h3>Ce que vous pouvez faire maintenant :</h3>
+                <div class="feature">
+                    <span class="feature-icon">✓</span> Commander vos impressions en ligne
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">✓</span> Suivre vos commandes en temps réel
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">✓</span> Accéder à notre chat support
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">✓</span> Télécharger vos factures et devis
+                </div>
+            </div>
+            
+            <div style="text-align: center;">
+                <a href="{{loginUrl}}" class="button">Accéder à mon compte</a>
+            </div>
+            
+            <p class="description">
+                Si vous avez des questions, n'hésitez pas à nous contacter. Notre équipe est là pour vous aider !
+            </p>
+        </div>
+        
+        <div class="footer">
+            <p><strong>PrintPro</strong> - Services d'impression professionnelle</p>
+            <p>📧 support@printpro.fr | 📞 01 23 45 67 89</p>
+            <p>© 2024 PrintPro. Tous droits réservés.</p>
+        </div>
+    </div>
+</body>
+</html>
