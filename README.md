@@ -1,4 +1,4 @@
-# PrintPro Backend API
+# 3MPrinting Backend API
 
 Backend complet pour l'application 3MPrinting - Gestion de services d'impression professionnelle.
 
