@@ -26,6 +26,9 @@ import notificationRoutes from './routes/notification.routes';
 import analyticsRoutes from './routes/analytics.routes';
 import inventoryRoutes from './routes/inventory.routes';
 import teamRoutes from './routes/team.routes';
+import paymentRoutes from './routes/payment.routes';
+import campaignRoutes from './routes/campaign.routes';
+import fileRoutes from './routes/file.routes';
 
 class App {
   public app: express.Application;
@@ -118,6 +121,9 @@ class App {
     this.app.use('/api/analytics', analyticsRoutes);
     this.app.use('/api/inventory', inventoryRoutes);
     this.app.use('/api/team', teamRoutes);
+    this.app.use('/api/payments', paymentRoutes);
+    this.app.use('/api/campaigns', campaignRoutes);
+    this.app.use('/api/files', fileRoutes);
 
     // API Info
     this.app.get('/api', (req, res) => {
@@ -134,7 +140,10 @@ class App {
           notifications: '/api/notifications',
           analytics: '/api/analytics',
           inventory: '/api/inventory',
-          team: '/api/team'
+          team: '/api/team',
+          payments: '/api/payments',
+          campaigns: '/api/campaigns',
+          files: '/api/files'
         },
         documentation: '/api/docs',
         health: '/health'
